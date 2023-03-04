@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+{% block content %}
+<h1>Enter Student's Detail</h1>
+<form action = "/saverecord" method="post">
+
+    <table align="center" cellspacing = "2" cellpadding = "13" border = "10" width="700">
+   
+     <tr><td>Name</td><td><input type="text" name="name" ></td></tr>
+     <tr><td>Email</td><td><input type="email" name="email"></td></tr>
+     <tr><td>Gender</td><td><input type="radio" name="options" id="male" value="male"> Male</td> </tr>
+    <tr><td></td><td><input type="radio" name="options" id="female" value="female"> Female </td></tr>
+     <tr><td>Contact No.</td><td><input type="number" name="contact"></td></tr>
+     <!-- <tr><td>D.O.B</td><td><input type="text" name="dob"></td></tr> -->
+     <tr><td>Address</td><td><input type="text" name="address"></td></tr>
+     <tr><td>Class</td><td><input type="radio" name="class" id="First" value="First">First</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Second" value="Second">Second</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Third" value="Second">Third</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Fourth" value="Second">Fourth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Fifth" value="Second">fifth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Sixth" value="Second">Sixth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Seventh" value="Second">Sevent</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Eigth" value="Second">Eighth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Nighth" value="Second">Ninth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Tenth" value="Second">Tenth</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="Eleventh" value="Second">Eleventh</td></tr>
+     <tr><td></td><td><input type="radio" name="class" id="twlefth" value="Second">Twelfth</td></tr>
+   
+     <tr><td></td><td><input type="submit" value="Submit"></td></tr>
+   
+    </table>
+</form>
+
+{% endblock %}
+</body>
+</html>

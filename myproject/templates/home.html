@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/homestyle.css') }}">
+</head>
+<body>
+  {% extends "base.html" %}
+{% block content %}
+<div class="test jumbotron">
+  {% if current_user.is_authenticated %}
+    <p>Hi {{ current_user.username }}!</p>
+  {% else %}
+    <p>Please login or register!</p>
+  {% endif %}
+</div>
+
+{% if current_user.is_authenticated %}
+<h1><a href="/add_student">add student</a></h1>
+<br>
+<h1><a href="/delete_student">delete student</a></h1>
+<br>
+<h1><a href="/student_info">view student details</a></h1>
+{% endif %}
+
+{% endblock %}
+</body>
+</html>

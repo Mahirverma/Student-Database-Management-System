@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% extends "base.html" %}
+{% block content %}
+
+<h1>Student Detail's</h1>
+<table align="center" cellspacing = "2" cellpadding = "13" border = "10" width="700" >
+
+    <thead>
+    <td>ID</td>
+    <td>Name</td>
+    <td>Email</td>
+    <td>Gender</td>
+    <td>Contact</td>
+    <!-- <td>D.O.B</td> -->
+    <td>Address</td>
+    <td>Class</td>
+   
+    </thead>
+    <!-- {% for student in students %}
+    <tr>
+    <td>{{student.id}}</td>
+    <td>{{student.name}}</td>
+    <td>{{student.email}}</td>
+    <td>{{student.gender}}</td>
+    <td>{{student.contact}}</td>
+    <td>{{student}}</td>
+    <td>{{student.address}}</td>
+    <td>{{students.Class}}</td>
+    </tr>
+    {% endfor %}    -->
+    </table>
+    <br><br>
+    <a href="/">Go back to home page</a>
+
+{% endblock %}
+</body>
+</html>
