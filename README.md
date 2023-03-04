@@ -6,11 +6,6 @@
 <p>After that you need to to just run the main application with the name <b>"app.py"</b> and it will run.</p>
 <br>
 <br>
-<h1>How to run the application</h1>
-<br>
-<p>You can run the application using Visual Studio Code by just writing <b>"python .\app.py"</b> in the terminal  </p>
-<br>
-<br>
 <h1>Introduction to the project</h1>
 <br>
 <p>
@@ -20,4 +15,8 @@ Student Database Management System is a web-based application that mainly focuse
 
 <p>The system is divided into three modules-Registration, Login, and manipulation of data. The teacher using student id can view his details and. The admin is provided with the privileges to modify the student details by updating the records. The update of any current record is to done by the administrator which is faculty itself. 
 The scope of this project is addressed to solve the issues of handling of large data in institutions. Providing the records in institutional websites provide an easier access to the student details. It solves this tedious work in a more convenient manner.</p>
-
+<br>
+<br>
+<h1>How to run the application</h1>
+<br>
+<p>You can run the application using Visual Studio Code by just writing <b>"python .\app.py"</b> in the terminal  </p>
